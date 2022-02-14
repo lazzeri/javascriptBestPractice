@@ -20,6 +20,22 @@ Object.keys();
 //if(!a) then a = b
 //Short is let x = a || b;
 
+//Optional Chainig:
+person && person.name && person.name.first
+
+CAN BE EASIER:
+
+person?.name?.first // undefined
+
+Prints val if not null
+function print(val) {
+    return val ?? 'Missing'
+}
+
+Multiple variable assignment:
+let [person, fruit, , day] = ['Monty', 'apple', 'reading', 'tomorrow'];
+
+
 
 //Module structure:
 myNameSpace = function(){
